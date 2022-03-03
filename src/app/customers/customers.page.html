@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>customers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="gotoHome()">Go to home</ion-button>
+
+  <ion-list *ngIf="permisos">
+    <ion-list-header> Recent Conversations </ion-list-header>
+
+    <ion-item *ngFor="let h of lista">
+      <ion-avatar slot="start">
+        <img src="../../assets/customers - png/{{h.image}}" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{h.name}}</h2>
+        <h3>{{h.state}}</h3>
+        <p>{{h.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-label *ngIf="!permisos">No tienes permisos para ver los clientes</ion-label>
+
+</ion-content>

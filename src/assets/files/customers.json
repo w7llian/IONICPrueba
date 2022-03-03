@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "name": "Ben",
+            "state": "Look, kid",
+            "description": "NJKRENGERG",
+            "image": "avatar-ben.png"
+        },
+        {
+            "name": "Finn",
+            "state": "Oh no",
+            "description": "mbklrnbjk",
+            "image": "avatar-finn.png"
+        }
+    ]
+}
